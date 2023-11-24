@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #090a10 40%, #161b24 );
+}
+
+.glitch{
+    width: 400px;
+    height: 340px;
+    background: url('../image/darkdeku.webp');
+    background-size: cover;
+    animation: glitch 3.5s infinite steps(1);
+}
+
+@keyframes glitch{
+    0%, 100%{
+        background: url('../image/darkdeku.webp');
+        background-size: cover;
+    }
+    92.5%{
+        background: url('../image/glitch-image-1675100932.png');
+        background-size: cover;
+        opacity: 1;
+    }
+    95%{
+        background: url('../image/glitch-image-1675100939.png');
+        background-size: cover;
+        opacity: 0;
+    }
+    97.5%{
+        background: url('../image/glitch-image-1675100962.png');
+        background-size: cover;
+        opacity: 1;
+    }
+    
+}

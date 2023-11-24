@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background: #2A2734;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fefefe;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+.carousel{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+.image{
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+span{
+    margin: auto;
+    font-size: 2rem;
+}
+
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+
+.image:nth-child(1){
+    background-image: url("https://www.10wallpaper.com/wallpaper/1920x1200/1304/dark_forest-Beautiful_natural_scenery_wallpaper_1920x1200.jpg");
+    transform: rotateY( 0deg) translateZ(430px);
+}
+.image:nth-child(2){
+    background-image: url("https://img.freepik.com/fotos-premium/paisagem-futurista-noturna-com-paisagem-abstrata-e-ilha-luar-brilhar-cena-natural-escura-com-reflexo-da-luz-na-agua-luz-azul-neon_129911-1083.jpg");
+    transform: rotateY( 40deg) translateZ(430px);
+}
+.image:nth-child(3){
+    background-image: url("https://www.10wallpaper.com/wallpaper/medium/1304/lake_sunset-Beautiful_natural_scenery_wallpaper_medium.jpg");
+    transform: rotateY( 80deg) translateZ(430px);
+}
+.image:nth-child(4){
+    background-image: url("https://thumbs.dreamstime.com/b/paisagem-da-floresta-escura-na-n%C3%A9voa-estrada-em-uma-131288099.jpg");
+    transform: rotateY( 120deg) translateZ(430px);
+}
+.image:nth-child(5){
+    background-image: url("https://thumbs.dreamstime.com/b/nuvens-escuras-dram%C3%A1ticas-em-montanhas-antes-da-tempestade-paisagem-com-cordilheiras-de-chuva-e-raios-solares-epic-natural-197421454.jpg");
+    transform: rotateY( 160deg) translateZ(430px);
+}
+.image:nth-child(6){
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP3ttuKwK-M5HTjIvq-rCkEudRnbHCvEpxVSth3A6wbOlk31UDC8bozIlzNSatSTRai00&usqp=CAU");
+    transform: rotateY( 200deg) translateZ(430px);
+}
+.image:nth-child(7){
+    background-image: url("https://www.10wallpaper.com/wallpaper/medium/1304/lake_sunset-Beautiful_natural_scenery_wallpaper_medium.jpg");
+    transform: rotateY( 240deg) translateZ(430px);
+}
+.image:nth-child(8){
+    background-image: url("https://i.pinimg.com/originals/38/71/fb/3871fbdd55d2dadf6d9825b0c5ab469f.jpg");
+    transform: rotateY( 280deg) translateZ(430px);
+}
+.image:nth-child(9){
+    background-image: url("https://img.freepik.com/fotos-gratis/uma-estrada-estreita-e-lamacenta-em-uma-floresta-escura_181624-9675.jpg");
+    transform: rotateY( 320deg) translateZ(430px);
+}
